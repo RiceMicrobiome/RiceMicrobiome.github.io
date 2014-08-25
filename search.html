@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <title>Search - Rice Microbiome
+</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+        <link rel="stylesheet" href="/theme/tipuesearch/tipuesearch.css">
+        <link rel="shortcut icon" type="image/png" href="/theme/images/icons/favicon.png">
+        <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+
+        <!--[if IE]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">Rice Microbiome </a></h1>
+                <nav><ul>
+                    <li><a href="/pages/RMB-Projects.html">RMB Projects</a></li>
+                    <li><a href="/pages/Who-we-are.html">People</a></li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/category/notebook.html">Notebook</a></li>
+                <form id="searchform" action="/search" onsubmit="return (this.elements['q'].value.length > 0)">
+                <input id="searchbox" type="text" name="q" size="12" placeholder="Search">
+</form>
+                </ul></nav>
+        </header><!-- /#banner -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js">
+</script>
+<script type="text/javascript" src="/theme/tipuesearch/tipuesearch/tipuesearch_set.js"></script>
+<script type="text/javascript" src="/theme/tipuesearch/tipuesearch/tipuesearch.min.js"></script>
+
+<script>
+$(document).ready(function() {
+     $('#tipue_search_input').tipuesearch({
+         'show': 10,
+         'mode': 'json',
+         'contentLocation': '/tipuesearch_content.json'
+     });
+});
+</script>
+
+<section id="content" class="body">
+
+<div align="center"><input type="text" size="60" id="tipue_search_input">
+<input type="button" id="tipue_search_button" value="Search"></div>
+<div id="tipue_search_content"></div>
+
+</section>
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>blogroll</h2>
+                        <ul>
+                            <li><a href="http://sundarlab.ucdavis.edu">Sundaresan Lab</a></li>
+                            <li><a href="http://phylogenomics.wordpress.com/">Eisen Lab</a></li>
+                            <li><a href="http://www.ucdavis.edu">UC Davis</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="#">You can add links in your config file</a></li>
+                            <li><a href="#">Another social link</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>
